@@ -182,6 +182,173 @@ This allows users to filter the dashboard by year.
     Y-axis: Average of Points.
     DAX for Average of Points: AVERAGE( 'YourTable'[Points] ) (This seems like average per race or average of final championship points per season. Given the scale, it's likely total points per season, and "Average of Points" might be a mislabeling or referring to how the line chart calculates its aggregate if there are multiple point entries per season). If it's total points, it would be SUM( 'YourTable'[Points] ). A championship points visual would typically sum points per season. The graph shows a sum trend, so SUM('YourTable'[Points]) is more probable.
 
+### Insights
+
+# 🏁 Max Verstappen Performance Analysis (2019–2025)
+
+---
+
+## 📊 Summary Statistics
+
+- **Total Races:** 151  
+- **Wins:** 60 _(39.7%)_  
+- **Podiums:** 95 _(62.9%)_  
+- **Pole Positions:** 34  
+- **Fastest Laps:** 13  
+
+---
+
+## 🏆 Wins by Season
+
+- **2021–2023** were peak years, especially **2023** with **~19 wins**
+- Steady rise from **2020 to 2023**
+- Significant drop in **2024**, and even more in **2025**
+
+**Insight:**  
+The performance peak in 2023 indicates optimal car-driver synergy. The post-2023 decline suggests possible car performance drop or stronger competition.
+
+---
+
+## 🚥 Qualifying Positions by Season
+
+- **2022–2024:** Many front-row starts and pole positions
+- **2025:** Significant drop in qualifying performance (more mid-grid starts)
+
+**Insight:**  
+Qualifying performance closely aligns with race success. Poor qualifying in 2025 contributed to the decline in wins and points.
+
+---
+
+## 🏁 Race Finish Position Distribution
+
+- **2021–2023:** Finishes tightly packed around P1–P2 (strong consistency)
+- **2024–2025:** Increased spread and more outliers (DNFs or poor finishes)
+
+**Insight:**  
+The variability and decline in finishing position show reduced race pace, strategy effectiveness, or car reliability in later seasons.
+
+---
+
+## 📉 Total Points by Season
+
+- **2023:** Peak with **~530 points**
+- **2025:** Sharp drop to **~150 points**
+
+**Insight:**  
+Reflects a major performance loss, correlating with the team switch to Haas Ferrari and weaker car (RB21).
+
+---
+
+## 🔄 Starting Grid vs Finishing Position
+
+- **Average position gain:** +1.0 per race  
+- Verstappen consistently finishes ahead of his starting position  
+- In **2025**, more races started in mid-grid with fewer top finishes
+
+**Insight:**  
+Strong racecraft and overtaking skills. But limited by weaker starting positions and car pace in 2025.
+
+---
+
+## 🚗 Wins by Year and Car Model
+
+| Season | Car Model | Wins |
+|--------|-----------|------|
+| 2019   | RB15      | 3    |
+| 2020   | RB16      | 2    |
+| 2021   | RB16B     | 10   |
+| 2022   | RB18      | 15   |
+| 2023   | RB19      | 19   |
+| 2024   | RB20      | 9    |
+| 2025   | RB21      | 2    |
+
+**Insight:**  
+The **RB19** was the most dominant. **RB21** likely underdelivered, affecting Verstappen’s ability to compete.
+
+---
+
+## 🏎️ Championship Points by Team
+
+| Season | Team                         | Points |
+|--------|------------------------------|--------|
+| 2019   | Red Bull Racing Honda        | 278    |
+| 2020   | Red Bull Racing Honda        | 215    |
+| 2021   | Red Bull Racing RBPT         | 390    |
+| 2022   | Red Bull Racing Honda RBPT   | 440+   |
+| 2023   | Red Bull Racing Honda RBPT   | 530+   |
+| 2024   | Red Bull Racing Honda RBPT   | 410    |
+| 2025   | Haas Ferrari                 | 155    |
+
+**Insight:**  
+The shift to **Haas Ferrari in 2025** coincides with a massive drop in points and performance.
+
+---
+
+## 🌍 Win Rate by Track and Circuit Type
+
+**Best Tracks:**
+
+- **Japan:** 80%
+- **Netherlands:** 75%
+- **Abu Dhabi / France / Qatar:** 66.7%
+- **Mexico / Austria / Belgium / USA:** 60%
+
+**Weakest Tracks:**
+
+- **Singapore:** 0%
+- **Australia:** 25%
+- **Monaco / Saudi Arabia / Qatar (Low Sample):** <30%
+
+**Insight:**  
+Verstappen performs best on **technical**, **flowing**, and **high-speed** tracks — struggles on **street circuits**.
+
+---
+
+## 📦 Performance by Circuit Type
+
+| Circuit Type     | Median Win Rate |
+|------------------|------------------|
+| Figure-8         | 80%              |
+| Banked Corners   | 75%              |
+| Tilke            | ~67%             |
+| High-Speed       | 60%              |
+| Medium Speed     | 50%              |
+| Technical        | 40–50%           |
+| Street Circuit   | ~25% or lower    |
+| Short Circuit    | ~29%             |
+
+**Insight:**  
+Verstappen excels on circuits with speed and flow. Tight, twisty street circuits remain a key weakness.
+
+---
+
+## ⭐ Best and Worst Tracks (Min 3 races)
+
+| Track           | Win Rate (%) | Circuit Type     |
+|----------------|--------------|------------------|
+| Emilia Romagna | 100.0        | Unknown          |
+| Japan          | 80.0         | Figure-8         |
+| Netherlands    | 75.0         | Banked Corners   |
+| Abu Dhabi      | 66.7         | Tilke            |
+| France         | 66.7         | Medium Speed     |
+| Australia      | 25.0         | Street Circuit   |
+| Singapore      | 0.0          | Street Circuit   |
+
+**Insight:**  
+Tracks like Japan, Netherlands, and Abu Dhabi are Verstappen's strongholds. Singapore and Australia are consistently difficult.
+
+---
+
+## ✅ Final Takeaways
+
+- **Peak Era:** 2021–2023, fueled by strong cars (RB18, RB19) and Red Bull's dominance
+- **2025 Decline:** Caused by switch to **Haas Ferrari** and underperforming **RB21**
+- **Qualifying vs Race:** Poor qualifying in 2025 limited race outcomes despite overtaking skills
+- **Track Preferences:** Technical, fast, and flowing circuits are Verstappen's strength
+- **Weakness:** Street circuits with limited overtaking and high unpredictability
+
+---
+
 ### Contributing
 Feel free to fork this repository, open issues, or submit pull requests. Any contributions to improve the analysis, add new features, or enhance visualizations are welcome!
 
