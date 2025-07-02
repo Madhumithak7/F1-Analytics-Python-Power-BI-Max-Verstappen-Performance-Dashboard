@@ -3,8 +3,11 @@
 ## 🎬 How a Clueless Movie Night Became a Data Obsession
 
 "It all started when I watched that F1 movie on a whim. As the credits rolled in the theater, I hit my friends with:
+
 🔥 "Why was everyone so angry about tires? Are they that expensive?"
+
 🚦 "WHY is he balancing this much weight on his HEAD in training video?!"
+
 🏎️ "Wait, why there are 2 players?"
 
 The next morning, 
