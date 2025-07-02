@@ -277,7 +277,7 @@ The **RB19** was the most dominant. **RB21** likely underdelivered, affecting Ve
 | 2022   | Red Bull Racing Honda RBPT   | 440+   |
 | 2023   | Red Bull Racing Honda RBPT   | 530+   |
 | 2024   | Red Bull Racing Honda RBPT   | 410    |
-| 2025   | Haas Ferrari                 | 155    |
+| 2025   | Red Bull Racing Honda RBPT   | 155    |
 
 **Insight:**  
 The shift to **Haas Ferrari in 2025** coincides with a massive drop in points and performance.
