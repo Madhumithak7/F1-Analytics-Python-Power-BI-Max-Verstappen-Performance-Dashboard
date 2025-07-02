@@ -165,29 +165,22 @@ DAX comments:
    DAX: LASTNONBLANKVALUE( 'YourTable'[Car Model], TRUE() ) or MAX( 'YourTable'[Car Model] ) if sorted by season, or a more complex measure to get the car for the most recent selected season.
 8) Bottom Row (Charts and Slicers):
 
-"Wins by Season" (Bar Chart):
+9) "Wins by Season" (Bar Chart):
+    X-axis: Season (from your date table or race results table).
+   Y-axis: [Total Wins] measure from above.
+   Legend/Color: Car Model or Team (the numbers like RB15, RB16, RB18, RB19, RB20, RB21 are car models).
+   DAX for Labels (e.g., 3 RB15): This would likely be a measure combining the count of wins and the car model, or simply using Car Model as a secondary category or tooltip. For exact labels like that on the bars, you might be using a combination of "Data Labels" features in Power BI and potentially a custom measure that concatenates the win count with the car model for the label.
 
-X-axis: Season (from your date table or race results table).
+10) "Season" (Slicer):
 
-Y-axis: [Total Wins] measure from above.
-
-Legend/Color: Car Model or Team (the numbers like RB15, RB16, RB18, RB19, RB20, RB21 are car models).
-
-DAX for Labels (e.g., 3 RB15): This would likely be a measure combining the count of wins and the car model, or simply using Car Model as a secondary category or tooltip. For exact labels like that on the bars, you might be using a combination of "Data Labels" features in Power BI and potentially a custom measure that concatenates the win count with the car model for the label.
-
-9) "Season" (Slicer):
-
-10) Field: Season (from your date or race results table).
+11) Field: Season (from your date or race results table).
 
 This allows users to filter the dashboard by year.
 
-11) "Campionship Points by Season" (Line Chart):
-
-X-axis: Season.
-
-Y-axis: Average of Points.
-
-DAX for Average of Points: AVERAGE( 'YourTable'[Points] ) (This seems like average per race or average of final championship points per season. Given the scale, it's likely total points per season, and "Average of Points" might be a mislabeling or referring to how the line chart calculates its aggregate if there are multiple point entries per season). If it's total points, it would be SUM( 'YourTable'[Points] ). A championship points visual would typically sum points per season. The graph shows a sum trend, so SUM('YourTable'[Points]) is more probable.
+12) "Campionship Points by Season" (Line Chart):
+    X-axis: Season.
+    Y-axis: Average of Points.
+    DAX for Average of Points: AVERAGE( 'YourTable'[Points] ) (This seems like average per race or average of final championship points per season. Given the scale, it's likely total points per season, and "Average of Points" might be a mislabeling or referring to how the line chart calculates its aggregate if there are multiple point entries per season). If it's total points, it would be SUM( 'YourTable'[Points] ). A championship points visual would typically sum points per season. The graph shows a sum trend, so SUM('YourTable'[Points]) is more probable.
 
 ### Contributing
 Feel free to fork this repository, open issues, or submit pull requests. Any contributions to improve the analysis, add new features, or enhance visualizations are welcome!
